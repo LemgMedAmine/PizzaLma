@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp" android:layout_width="match_parent"
+    android:layout_height="96dp">
+
+    <ImageView
+        android:id="@+id/pizzaImage"
+        android:layout_width="96dp" android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/pizzaName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pizzaImage"
+        android:layout_marginStart="12dp"
+        android:textStyle="bold" android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/pizzaMetadata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizzaName"
+        android:layout_toRightOf="@id/pizzaImage"
+        android:layout_marginStart="12dp"/>
+</RelativeLayout>
